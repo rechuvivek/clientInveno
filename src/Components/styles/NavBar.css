@@ -1,0 +1,82 @@
+/* ✅ Hamburger Icon */
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #000;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* ✅ Full Sidebar */
+.custom-offcanvas {
+  width: 220px !important;
+  background-color: #f3e6ec;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ✅ Elegant Nav Styles */
+.elegant-nav {
+  margin-top: 10px;
+}
+
+.elegant-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.elegant-link i {
+  font-size: 1rem;
+  color: #6c5f6b; /* subtle icon color */
+}
+
+.elegant-link:hover {
+  background-color: #e9d7de;
+  color: #000;
+  text-decoration: none;
+}
+
+.elegant-link:hover i {
+  color: #000;
+}
+
+/* ✅ Active Link Example (optional) */
+.elegant-link.active {
+  background-color: #d7bcc8;
+  font-weight: 600;
+  color: #000;
+}
+.elegant-link.active i {
+  color: #000;
+}
+
+/* ✅ Sidebar Header */
+.offcanvas-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}

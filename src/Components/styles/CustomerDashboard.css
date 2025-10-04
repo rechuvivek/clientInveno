@@ -1,0 +1,66 @@
+body {
+  background-color: #e7d2dd; /* light pinkish background */
+}
+
+.dashboard-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.menu-btn {
+  background: none;
+  border: none;
+}
+
+.menu-btn .navbar-toggler-icon {
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  position: relative;
+}
+
+.menu-btn .navbar-toggler-icon::before,
+.menu-btn .navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  left: 0;
+}
+
+.menu-btn .navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.menu-btn .navbar-toggler-icon::after {
+  top: 8px;
+}
+
+.brand-name {
+  font-family: "Impact", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Dashboard Box Style */
+.dashboard-box {
+  background-color: rgba(128, 109, 125, 0.6);
+  border-radius: 25px;
+  padding: 40px 20px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

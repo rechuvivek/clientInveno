@@ -64,3 +64,15 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+/* Dashboard.css */
+.link-no-style {
+  text-decoration: none; /* remove underline */
+  color: inherit;        /* inherit parent color */
+  display: block;        /* make entire box clickable */
+  cursor: pointer;       /* pointer on hover */
+}
+
+.link-no-style:hover {
+  text-decoration: none; /* ensure no underline on hover */
+}
